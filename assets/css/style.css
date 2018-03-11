@@ -1,0 +1,306 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #23272A;
+  width: 100%;
+}
+
+/*General Styling*/
+
+.sub-title {
+  color: #cf2028;
+  font-size: 24px;
+}
+
+
+.title {
+  color: #2C2F33;
+  font-size: 40px;
+}
+
+.icon {
+  color: #2C2F33;
+  font-size: 72px !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+.submit {
+  margin-top: 12px;
+  position: absolute;
+  color: #2C2F33;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submit:hover {
+  background: #2C2F33;
+  color: white;
+}
+
+.submit:focus {
+  background: #2C2F33;
+}
+
+.title-divider {
+  margin-bottom: 32px;
+  height: 1px;
+  background: #cf2028;
+  width: 100vw;
+}
+
+a, input, textarea {
+  color: white !important;
+}
+
+i {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+/* Other */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #23272A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cf2028;
+}
+
+::selection {
+  background: #cf2028; 
+  color: white;
+}
+::-moz-selection {
+  background: #cf2028;
+  color: white;  
+}
+
+/*Body Styling*/
+
+#front-page {
+  height: 50vh;
+}
+
+#updates,
+#details,
+#about,
+#contribute {
+  max-height: auto;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+  overflow: hidden;
+}
+
+#details {
+  background: #f5f5f5;
+}
+
+#updates,
+#about {
+  background: white;
+}
+
+#contribute {
+  background: linear-gradient(270deg, #cf2028, #330867);
+  background-size: 400% 400%;
+  -webkit-animation: contribute-gradient 30s ease infinite;
+  -moz-animation: contribute-gradient 30s ease infinite;
+  -o-animation: contribute-gradient 30s ease infinite;
+  animation: contribute-gradient 30s ease infinite;
+}
+
+/*Cover*/
+
+#cover {
+  color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#cover-content {
+  z-index: 99;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cover-content>img {
+  position: relative;
+  width: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#cover-content>h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  height: 100% !important;
+  background-position: center;
+  overflow: hidden;
+}
+
+.filter {
+  background: rgba(255, 0, 0, 0.2);
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  height: 50vh;
+}
+
+/* Contact */
+
+/*Contacts Page Styling*/
+
+
+/* label color */
+
+.input-field label {
+  color: white;
+}
+
+
+/* label focus color */
+
+.input-field input:focus+label {
+  color: white !important;
+}
+
+.input-field textarea:focus+label {
+  color: white !important;
+}
+
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important
+}
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix {
+  color: white !important;
+}
+
+
+.input-field .prefix.active {
+  color: white !important;
+}
+
+.learn-more, .learn-more:focus {
+  background: #2C2F33;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.learn-more:hover {
+  background: #f5f5f5;
+  color: #2C2F33;
+  
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+
+/* https://codepen.io/jeffbredenkamp/pen/ZpGOAW?q=scroll%20arrow&limit=all&order=popularity&depth=everything&show_forks=false */
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 5vh;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 99;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation: fade_move_down 2s ease-in-out infinite;
+  animation: fade_move_down 2s ease-in-out infinite;
+}
+
+/*Slide In Animation*/
+
+.slide-animation {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
